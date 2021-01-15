@@ -3,6 +3,16 @@
 <%= @doctor.specialty %>
 <%= @doctor.university %>
 <%= @doctor.hospital.name %>
-<% @doctor.patients.each do |patient| %>
-  <%= patient.name %>
+
+<h3>Patients</h3>
+<% @doctor.active_patients.each do |patient| %>
+  <ul>
+    <section id='patient-<%= patient.id%>' >
+      <li><%= patient.name %></li>
+        <%= form_with model: @doctor, method: :patch, url: doctor_path(@doctor), local: true do |f| %>
+          <%= f.hidden_field :patient, value: patient.id %>
+          <%= f.submit "Remove patient" %>
+        <% end %>
+    </section>
+  </ul>
 <% end %>
