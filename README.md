@@ -3,9 +3,8 @@
 This repository is a practice exercise of a previous cohort's final assessment in Mod 2.
 
 ### Description
-Seattle Grace is based off of Grey’s Anatomy, but you need NO knowledge of Grey’s Anatomy to complete this final.
-Hospitals have many Doctors, Doctors work for just one hospital. Doctors can have many patients, and patients can have many doctors.Make sure to read all instructions and user stories before getting started.
-​
+Hospitals have many Doctors, Doctors work for just one hospital. Doctors can have many patients, and patients can have many doctors.
+
 ## Database Information
 * Hospitals have a name
 * Doctors have a name, specialty, and university that they attended
